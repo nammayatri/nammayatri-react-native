@@ -285,7 +285,7 @@ in  upstream
       ]
     , repo =
         "ssh://git@ssh.bitbucket.juspay.net/picaf/purescript-presto-dom.git"
-    , version = "v2.9.0"
+    , version = "ny-to-react"
     }
   with ui-components =
     { dependencies = [ "console", "effect", "prelude", "presto", "presto-dom" ]
@@ -373,7 +373,7 @@ in  upstream
       , "react-basic-hooks"
       ]
     , repo = "ssh://git@ssh.bitbucket.juspay.net/picaf/purs-react.git"
-    , version = "event-recorder-testId"
+    , version = "ny-to-react"
     }
   with react-basic-hooks =
     { dependencies =
