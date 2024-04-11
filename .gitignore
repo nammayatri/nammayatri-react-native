@@ -39,4 +39,5 @@ node_modules
 #psci_modules
 *.psci_modules
 
+.spago
 output

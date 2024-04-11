@@ -13,7 +13,7 @@
     "@react-native-async-storage/async-storage": "^1.23.1",
     "expo": "~50.0.14",
     "expo-status-bar": "~1.11.1",
-    "presto-react": "git+ssh://git@ssh.bitbucket.juspay.net/proj/presto-react.git#ny-to-react",
+    "presto-react": "git+ssh://git@ssh.bitbucket.juspay.net/picaf/presto-react.git#ny-to-react",
     "presto-ui": "git+https://github.com/juspay/presto-ui.git#nammayatri",
     "react": "18.2.0",
     "react-native": "0.73.6"
