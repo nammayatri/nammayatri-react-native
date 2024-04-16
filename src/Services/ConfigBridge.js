@@ -1,49 +1,31 @@
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export const setKeyInSharedPrefKeysImpl = function (key) {
-  console.log("This is it ....1 ");
+export const setKeyValue = function (key) {
+  console.log("setKeyValue", "stage1")
   return function (value) {
-    console.log("This is it ....2 ");
-    // return function (){
-        console.log("This is it ....3 ")
-        storeData(key, value).then(() => {
-            console.log("AsyncStorage storage successful : ", " Key - " , key, " | value - ", value);
-        }).catch(error => {
-            console.log("AsyncStorage storage unsuccessful : ", " Key - " , key, " | value - ", value);
-        });
-    // }
-  }
-}
-
-export const getKeyInSharedPrefKeysImpl = function (key) {
-   getData(key).then((value) => {
-      console.log("AsyncStorage fetching successful : ", " Key - " , key, " | value - ", value);
-      return value;
-   }).catch(error => {
-      console.log("AsyncStorage fetching unsuccessful : ", " Key - " , key);
-      return "__failed";
-   })
-
-   return "Hellow";
-}
-
-const storeData = async (key, value) => {
-  try {
-    await AsyncStorage.setItem(key, value); 
-  } catch (e) {
-    console.log("Error in storing data in async storage");
-  }
-}
-
-
-const getData = async (key) => {
-  try {
-    const value = await AsyncStorage.getItem(key);
-    if (value !== null){
-      return value;
+    console.log("setKeyValue", "stage2")
+    return function(_error, success) {
+      console.log("setKeyValue", "stage3")
+      AsyncStorage.setItem(key, value).then(() => {
+          console.log("Storage successful: ", "Key -", key, "| value -", value);
+          success();
+      }).catch(error => {
+          console.error("Storage unsuccessful: ", "Key -", key, "| error -", error);
+          throw error; // Important to rethrow the error for the .catch in Aff to work
+      });
     }
-  } catch (e){
-    console.log("Error in fetching data from async storage");
   }
-  return null;
+}
+
+export const getValueByKey = function (key) {
+  return function(_error, success) {
+    AsyncStorage.getItem(key).then((value) => {
+            console.log("fetching successful: ", "Key -", key, "| value -", value);
+            success(value);
+        }).catch(error => {
+            console.error("fetching unsuccessful: ", "Key -", key, "| error -", error);
+            throw error; // Important to rethrow the error for the .catch in Aff to work
+        });
+  }
 }

@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nammayatri"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:3:22-64
+12    <!--
+13    This manifest file is used only by Gradle to configure debug-only capabilities
+14    for React Native Apps.
+15    -->
+16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+16-->[com.facebook.react:react-android:0.73.6] /Users/anuragini.paunikar/.gradle/caches/transforms-3/12335a800a0639b694ca9d924c17da07/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:5-78
+16-->[com.facebook.react:react-android:0.73.6] /Users/anuragini.paunikar/.gradle/caches/transforms-3/12335a800a0639b694ca9d924c17da07/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:22-75
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.facebook.flipper:flipper:0.201.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4152179fa815c02ba7f0ce395c81329d/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
+17-->[com.facebook.flipper:flipper:0.201.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4152179fa815c02ba7f0ce395c81329d/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:22-73
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+20        android:name="com.nammayatri.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.nammayatri.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:5:5-24:19
+26        android:name="com.nammayatri.MainApplication"
+26-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:6:7-38
+27        android:allowBackup="false"
+27-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:10:7-34
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.9.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/4a71451f9debb53f01e13b840b6cd6e4/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:8:7-41
+32        android:label="@string/app_name"
+32-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:7:7-39
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:9:7-52
+34        android:theme="@style/AppTheme"
+34-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:11:7-38
+35        android:usesCleartextTraffic="true" >
+35-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/debug/AndroidManifest.xml:6:9-44
+36        <activity
+36-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:12:7-23:18
+37            android:name="com.nammayatri.MainActivity"
+37-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:13:9-37
+38            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+38-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:15:9-118
+39            android:exported="true"
+39-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:18:9-32
+40            android:label="@string/app_name"
+40-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:14:9-41
+41            android:launchMode="singleTask"
+41-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:16:9-40
+42            android:windowSoftInputMode="adjustResize" >
+42-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:17:9-51
+43            <intent-filter>
+43-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:19:9-22:25
+44                <action android:name="android.intent.action.MAIN" />
+44-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:20:13-65
+44-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:20:21-62
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:21:13-73
+46-->/Users/anuragini.paunikar/Desktop/new_rn_project/NammaYatri/android/app/src/main/AndroidManifest.xml:21:23-70
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->[com.facebook.react:react-android:0.73.6] /Users/anuragini.paunikar/.gradle/caches/transforms-3/12335a800a0639b694ca9d924c17da07/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:19:9-21:40
+50            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+50-->[com.facebook.react:react-android:0.73.6] /Users/anuragini.paunikar/.gradle/caches/transforms-3/12335a800a0639b694ca9d924c17da07/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:20:13-77
+51            android:exported="false" />
+51-->[com.facebook.react:react-android:0.73.6] /Users/anuragini.paunikar/.gradle/caches/transforms-3/12335a800a0639b694ca9d924c17da07/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:21:13-37
+52
+53        <meta-data
+53-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/91b0376945d436320b2126bd523815a5/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+54            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+54-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/91b0376945d436320b2126bd523815a5/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+55            android:value="GlideModule" />
+55-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/91b0376945d436320b2126bd523815a5/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+59            android:authorities="com.nammayatri.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.2.0] /Users/anuragini.paunikar/.gradle/caches/transforms-3/f5804b72f15e8d5ce1650fa760680c0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/anuragini.paunikar/.gradle/caches/transforms-3/d00c605fb35daa78e9de1455a337e486/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/anuragini.paunikar/.gradle/caches/transforms-3/d00c605fb35daa78e9de1455a337e486/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/anuragini.paunikar/.gradle/caches/transforms-3/d00c605fb35daa78e9de1455a337e486/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+67        </provider>
+68
+69        <meta-data
+69-->[com.facebook.soloader:soloader:0.10.5] /Users/anuragini.paunikar/.gradle/caches/transforms-3/2e7176c4091a0f5132ef9001385dd145/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+70            android:name="com.facebook.soloader.enabled"
+70-->[com.facebook.soloader:soloader:0.10.5] /Users/anuragini.paunikar/.gradle/caches/transforms-3/2e7176c4091a0f5132ef9001385dd145/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+71            android:value="false" />
+71-->[com.facebook.soloader:soloader:0.10.5] /Users/anuragini.paunikar/.gradle/caches/transforms-3/2e7176c4091a0f5132ef9001385dd145/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+72    </application>
+73
+74</manifest>
