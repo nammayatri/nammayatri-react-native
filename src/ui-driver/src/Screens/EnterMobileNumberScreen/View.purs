@@ -53,17 +53,29 @@ view push state =
   --       ]
   -- ]
   relativeLayout
-  [ width MATCH_PARENT
-  , height MATCH_PARENT
-  , background Color.red900
+  [ width WRAP_CONTENT
+  , height WRAP_CONTENT
+  , background Color.green900
+  , orientation HORIZONTAL
+  , gravity CENTER_HORIZONTAL
   ][imageView
     [ imageWithFallback $ "ny_ic_chevron_left_white,https://assets.juspay.in/beckn/nammayatri/user/images/ny_ic_chevron_left_white.png"
-    , height $ V 100
-    , width $ V 100
-    , background Color.red900
+    , height $ V 30
+    , width $ V 30
     ]
+  , enterMobileNumberTextView state
   ]
 
+enterMobileNumberTextView :: ST.EnterMobileNumberScreenState ->  forall w . PrestoDOM (Effect Unit) w
+enterMobileNumberTextView state =
+ textView (
+  [ height WRAP_CONTENT
+  , width WRAP_CONTENT
+  , text "Enter Your mobile Number"
+  , color "#000000"
+  , margin (MarginHorizontal 10 10)
+  ]
+  )
 
 
 
