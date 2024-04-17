@@ -35,3 +35,27 @@ type EnterMobileNumberScreenStateProps = {
   isValid :: Boolean,
   mobileNumberEditFocused :: Boolean
 }
+
+type EnterOTPScreenState = {
+  data :: EnterOTPScreenStateData,
+  props :: EnterOTPScreenStateProps
+}
+
+type EnterOTPScreenStateData = {
+  otp :: String,
+  tokenId :: String,
+  attemptCount :: Int,
+  mobileNo :: String,
+  timer :: String,
+  capturedOtp :: String,
+  focusedIndex :: Int,
+  editTextId :: String
+  -- config :: AppConfig
+}
+
+type EnterOTPScreenStateProps = {
+  btnActive :: Boolean,
+  isValid :: Boolean,
+  resendEnabled :: Boolean,
+  otpTmp :: Boolean
+}

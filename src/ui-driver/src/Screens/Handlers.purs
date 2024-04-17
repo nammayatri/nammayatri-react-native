@@ -16,3 +16,4 @@
 module Screens.Handlers (module UI) where
 
 import Screens.EnterMobileNumberScreen.Handler (enterMobileNumberScreen) as UI
+import Screens.EnterOTPScreen.Handler (enterOTP) as UI

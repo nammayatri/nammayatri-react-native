@@ -1,8 +1,11 @@
 module Main where
 
 import Data.Maybe
+import Debug
 import Prelude
+import PrestoDOM
 
+import ConfigBridge as ConfigBridge
 import Control.Monad.Except (runExcept, throwError)
 import Control.Monad.Except.Trans (ExceptT)
 import Control.Monad.Except.Trans (lift)
@@ -27,16 +30,13 @@ import Presto.Core.Types.API (Header(..), Headers(..), Request(..), RestAPIOptio
 import Presto.Core.Types.Language.Flow (Flow, defaultState, doAff, getState, modifyState)
 import Presto.Core.Types.Language.Flow (FlowWrapper)
 import Presto.Core.Types.Permission (Permission(..), PermissionResponse, PermissionStatus(..))
-import PrestoDOM
+import PrestoDOM.Properties (onClickProp) as ONClick
 import React.Basic (JSX)
+import React.Hooks.UseBackPressed (backPressUtility)
 import React.Navigation.Navigate (initScaffold, navigateToScreen)
 import React.Navigation.Types (ScopedScreen)
-import Debug
-import PrestoDOM.Properties (onClickProp) as ONClick
-import React.Hooks.UseBackPressed (backPressUtility)
-import Tools.Events as TE
-import ConfigBridge as ConfigBridge
 import Screens.Handlers as UI
+import Tools.Events as TE
 import Types.App (FlowBT, GlobalState(..), ScreenType(..), defaultGlobalState)
 
 -- import React.Basic.Event (onClick2, onClick, afterRender) as ONClick
@@ -127,9 +127,9 @@ homeScreenFlow = do
 
   _ <- lift $ lift $ ConfigBridge.setKeyInSharedPrefKeys (show ConfigBridge.WELCOME) "Hi! This is just the beginning of the new end"
   retrievedValue <- lift $ lift $ ConfigBridge.getKeyInSharedPrefKeys "WELCOME"
-  let hello = spy "This is the retrieved value from async storage" retrievedValue
+  let hello = spy "This is the retrieved value from async1 storage" retrievedValue
   
-  action <- UI.enterMobileNumberScreen
+  action <- UI.enterOTP
   -- output <- lift $ lift $ navigateToScreen $ screen {dummy : "screen1"}
   -- let hello = spy "This is the screenOutput" (show output)
   -- output <- lift $ lift $ navigateToScreen $ screen {dummy : "screen2"}

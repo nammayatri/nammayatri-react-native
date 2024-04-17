@@ -22,7 +22,8 @@ import Foreign (Foreign)
 import Foreign.Object (Object(..), empty)
 import Presto.Core.Types.Language.Flow (FlowWrapper)
 import Screens.EnterMobileNumberScreen.ScreenData as EnterMobileNumberScreenData
-import Screens.Types (EnterMobileNumberScreenState)
+import Screens.EnterOTPScreen.ScreenData as EnterOTPScreenData
+import Screens.Types (EnterMobileNumberScreenState, EnterOTPScreenState)
 import Foreign.Object ( Object(..), empty)
 import Foreign (Foreign)
 import Data.Maybe (Maybe(..))
@@ -30,15 +31,20 @@ import Data.Maybe (Maybe(..))
 type FlowBT e a = BackT (ExceptT e (Free (FlowWrapper GlobalState))) a
 
 newtype GlobalState = GlobalState {
-    mobileNumberScreen :: EnterMobileNumberScreenState
+    mobileNumberScreen :: EnterMobileNumberScreenState, 
+    enterOTPScreen :: EnterOTPScreenState
   }
 
 defaultGlobalState :: GlobalState
 defaultGlobalState = GlobalState {
-    mobileNumberScreen : EnterMobileNumberScreenData.initData
+    mobileNumberScreen : EnterMobileNumberScreenData.initData,
+    enterOTPScreen : EnterOTPScreenData.initData
   }
 
 data ENTER_MOBILE_NUMBER_SCREEN_OUTPUT = GO_TO_ENTER_OTP EnterMobileNumberScreenState
 
+data ENTER_OTP_SCREEN_OUTPUT = RETRY EnterOTPScreenState | DRIVER_INFO_API_CALL EnterOTPScreenState
+
 data ScreenType =
     EnterMobileNumberScreenType (EnterMobileNumberScreenState -> EnterMobileNumberScreenState)
+    | EnterOTPScreenType (EnterOTPScreenState -> EnterOTPScreenState)

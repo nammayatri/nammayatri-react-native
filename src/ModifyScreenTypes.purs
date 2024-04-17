@@ -25,6 +25,7 @@ modifyScreenState :: ScreenType -> FlowBT String Unit
 modifyScreenState st =
   case st of
     EnterMobileNumberScreenType a -> modifyState (\(GlobalState  state) -> GlobalState  $ state { mobileNumberScreen = a state.mobileNumberScreen})
+    EnterOTPScreenType a -> modifyState (\(GlobalState  state) -> GlobalState  $ state { enterOTPScreen = a state.enterOTPScreen})
 
 data FlowState = HelpAndSupportScreenFlow 
                | IssueReportChatScreenFlow
